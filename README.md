@@ -109,8 +109,4 @@ Développé dans le cadre du cours **Techniques de Programmation II** par :
 - Zeller Emile
 - Schneider Hugo
 
-## 📜 Citation inspirante
-> "Chaque jour où tu ouvres ton IDE est un jour où tu refuses d'abandonner."  
-> — Pipithon
-
 Merci d'avoir découvert **Pipithon**. Que l'aventure Pythonienne commence ! 🚀🐍
