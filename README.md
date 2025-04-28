@@ -1,86 +1,80 @@
 # Pipithon - Système Intelligent d'Apprentissage Python 🚀
 
-Bienvenue dans **Pipithon**, un projet de gamification de l'apprentissage Python avec IA adaptative, XP, niveaux et défis !
+Bienvenue dans **Pipithon**, un projet novateur qui gamifie l'apprentissage du langage Python grâce à une intelligence adaptative, un système d'XP, des niveaux, et des défis progressifs !
 
----
+## 🔍 Présentation du projet
+**Pipithon** a été conçu pour transformer l'apprentissage du Python en une aventure ludique et motivante. Chaque joueur évolue à travers :
 
-## 🔍 Aperçu du projet
+- des **cours interactifs**,
+- des **QCM dynamiques** pour valider ses connaissances,
+- des **défis de programmation adaptés** à son niveau,
+- un **système de progression** inspiré du monde du gaming.
 
-**Pipithon** propose à chaque joueur :
-- des cours interactifs,
-- des QCM de validation,
-- des défis adaptés au niveau,
-- un système de progression basé sur l'XP,
-- une expérience personnalisée et motivante.
+Grâce à une **IA adaptative**, le contenu proposé s'ajuste en fonction du profil et des performances de chaque joueur, garantissant ainsi un apprentissage sur-mesure et efficace.
 
-Chaque action enrichit l'expérience du joueur et lui permet de progresser dans les niveaux de maîtrise du Python !
+## 🛠️ Fonctionnalités principales
+- **Cours dynamiques** basés sur l'historique de progression
+- **Défis Python** classés par niveau de difficulté
+- **QCM intelligents** pour tester et consolider les acquis
+- **IA adaptative** proposant automatiquement les meilleurs contenus
+- **Système d'expérience (XP) et de niveaux** inspiré du gaming
+- **Citadelle de citations** pour encourager et motiver 🌈
+- **Suivi d'activité** et **exportation de statistiques personnalisées**
+- **Historique détaillé** des activités pour analyser sa progression
 
----
-
-## 🛠þ Fonctionnalités principales
-
-- **Cours dynamiques** selon l'historique
-- **Défis Python** répartis par niveau
-- **QCM intelligents** pour vérifier la compréhension
-- **IA adaptative** qui propose automatiquement le meilleur contenu
-- **Système XP et niveaux** inspiré du gaming
-- **Citadelle de citations** pour encourager 🌈
-- **Historique et suivi** des activités
-- **Exportation de statistiques**
-
----
-
-## 📁 Structure du projet
-
+## 📁 Architecture du projet
 ```bash
 pipithon/
-├── ai.py              # Intelligence adaptative
-├── bot.py             # Gestion des commandes
-├── export.py          # Sauvegarde et export des données
-├── utils.py           # Fonctions utilitaires
-├── cours.json         # Contenu des cours
-├── defis.json         # Liste des défis
-├── citations.json     # Citations motivantes
-├── messages.json      # Messages système et montée de niveau
-├── levels.json        # XP et titres par niveau
+├── ai.py              # Module d'IA adaptative
+├── bot.py             # Gestionnaire des commandes utilisateur
+├── export.py          # Exportation et sauvegarde des données utilisateur
+├── utils.py           # Fonctions utilitaires diverses
+├── cours.json         # Contenus des cours interactifs
+├── defis.json         # Liste des défis Python par niveau
+├── citations.json     # Citations inspirantes
+├── messages.json      # Messages systèmes et niveaux
+├── levels.json        # Système d'XP et paliers de niveau
 ├── users.json         # Données utilisateurs
-├── logs.json          # Historique d'activités
-├── xp_rules.json      # Règles d'attribution XP
-└── README.md          # Ce fichier
+├── logs.json          # Historique des activités
+├── xp_rules.json      # Règles d'attribution d'XP
+└── README.md          # Documentation du projet (ce fichier)
 ```
-
----
 
 ## 🔧 Installation
 
 ### 1. Prérequis
-
 - Python ≥ 3.8
-- Bibliothèques : `discord`, `json`, `random`, `datetime`
+- Bibliothèques nécessaires :
+  - `discord`
+  - `json`
+  - `random`
+  - `datetime`
+
+Installez les dépendances avec :
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Clés API (si besoin)
+### 2. Configuration
+- Si utilisation via Discord : ajoutez votre `bot_token` dans votre environnement.
 
-Si vous utilisez Discord, configurez votre `bot_token`.
-
----
-
-## 🚷 Lancement du bot
+## 🚀 Lancement du projet
+Exécutez le bot avec la commande suivante :
 
 ```bash
 python bot.py
 ```
 
-- Utilisez les commandes `!start`, `!continuer`, `!stats`...
-- L'IA se charge de tout vous proposer intelligemment !
+Utilisez ensuite les commandes interactives :
 
----
+- `!start` — Démarrer votre aventure
+- `!continuer` — Poursuivre votre progression
+- `!stats` — Consulter vos statistiques
+
+L'intelligence adaptative se charge de vous guider automatiquement à travers les cours, défis et QCM adaptés à votre profil.
 
 ## 💎 Système de Niveaux
-
 | Niveau | XP nécessaire | Titre |
 |:------:|:-------------:|:------|
 | 1      | 0             | 🐣 Débutant de l'œuf |
@@ -89,36 +83,34 @@ python bot.py
 | 20     | 600           | 🧙‍♂️ Magicien du If |
 | 30     | 1100          | 🤖 Maître des Fonctions |
 
-*(Plus de 90 niveaux disponibles !)*
+> Plus de **90 niveaux** sont disponibles pour encourager la progression sur le long terme !
 
----
-
-## 🎉 Exemple d'utilisation
-
+## 🎮 Exemple d'utilisation
 ```bash
 !start
-> Bienvenue jeune aventurier du Python !
+> Bienvenue, jeune aventurier du Python !
 
 !continuer
-> Aujourd'hui, un défi t'attend : écrire une fonction qui affiche chaque lettre d'un mot...
+> Aujourd'hui, ton défi : écrire une fonction qui affiche chaque lettre d'un mot...
 ```
+Chaque action vous rapproche du prochain niveau et de nouveaux défis plus complexes !
 
----
+## 📈 Améliorations futures
+- Introduction d'un **mode tournoi multijoueurs**
+- **Système de quêtes** quotidiennes et hebdomadaires
+- Déverrouillage de **badges et récompenses spéciales**
+- **Tableau de bord visuel** pour le suivi des progrès
+- Ajout d'**animations** pour rendre l'expérience encore plus immersive
 
-## 🔄 Améliorations futures
+## 👨‍💻 Auteurs
+Développé dans le cadre du cours **Techniques de Programmation II** par :
 
-- Mode tournoi multi-joueurs
-- Badges et récompenses spéciaux
-- Système de quêtes
-- Progression visuelle sur un tableau de bord
+- Mehdi Fehri
+- Zeller Emile
+- Schneider Hugo
 
----
-
-## 👽‍♂️ Auteurs
-
-Projet développé par Mehdi fehri, Zeller Emile, Schneider Hugo pour le cours **Techniques de Programmation II**.
-
----
-
-> "Chaque jour où tu ouvres ton IDE est un jour où tu refuses d'abandonner."
+## 📜 Citation inspirante
+> "Chaque jour où tu ouvres ton IDE est un jour où tu refuses d'abandonner."  
 > — Pipithon
+
+Merci d'avoir découvert **Pipithon**. Que l'aventure Pythonienne commence ! 🚀🐍
